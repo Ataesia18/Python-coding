@@ -1,0 +1,16 @@
+house_price = input("How much is the house? ")
+credit = input("What is your credit? ")
+credit = int(credit)
+good_credit = .10
+bad_credit = .20
+
+if credit >= 760:
+    down_payment = float(good_credit) * float(house_price)
+    down_payment = float(down_payment)
+    print(f"Your down payment is ${down_payment}0")
+elif 690 <= credit < 760:
+    down_payment = float(bad_credit) * float(house_price)
+    down_payment = float(down_payment)
+    print(f"Your down payment is ${down_payment}0")
+else:
+    print("Unfortunately, you do not qualify.")
